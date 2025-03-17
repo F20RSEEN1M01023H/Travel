@@ -35,17 +35,24 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
             height: 200px;
         }
+
         @media (max-width: 768px) {
-         .noman{
-            margin-top: 30px;
-         }
-    }
+            .noman {
+                margin-top: 30px;
+            }
+        }
+
+        @media (min-width: 1400px) and (max-width: 2500px) {
+            .noman {
+                /* margin-top: -20px; */
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 > <a style="text-decoration: none; color: white;" href="index.html">Dubai Diary</a></h1>
+        <h1> <a style="text-decoration: none; color: white;" href="index.html">Dubai Diary</a></h1>
         <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
         <nav>
             <ul class="nav-links">
@@ -57,13 +64,15 @@
             </ul>
         </nav>
     </header>
-    
+
 
     <main class="container">
         <section class="about-section text-center">
             <img src="assets/index3.jpg" alt="Zulaikha Ahmed" class="author-image">
             <h2 class="fw-bold mt-2">Zulaikha Ahmed</h2>
-            <p class="text-muted">I'm a world traveler who enjoys learning new cultures, visiting the world, and experiencing breathtaking locations. Each trip keeps my passion for adventure and adventure active and leaves behind unforgettable memories.</p>
+            <p class="text-muted">I'm a world traveler who enjoys learning new cultures, visiting the world, and
+                experiencing breathtaking locations. Each trip keeps my passion for adventure and adventure active and
+                leaves behind unforgettable memories.</p>
         </section>
         <section class="row">
             <div class="col-md-6">
