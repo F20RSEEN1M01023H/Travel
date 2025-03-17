@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Zulaikha's Dubai Diary</title>
+    <link rel="stylesheet" href="styles(1).css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+            /* background-color: #f0f2f5; */
+        }
+
+        .box {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #00a8e8;
+            border-radius: 8px;
+            background: white;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .box:hover .content {
+            opacity: 1;
+        }
+        .heading{
+            text-align: center;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zulaikha's Dubai Diary</h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index(1).html">Home</a></li>
+                <li><a href="about(1).html">About Me</a></li>
+                <li><a href="adventures(1).html">Dubai Adventures</a></li>
+                <li><a href="gallery(1).html">Gallery</a></li>
+                <li><a href="contact(1).html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <section>
+            <h2>Gallery</h2>
+            <p>Here are some of my favorite moments captured during my time in Dubai. I hope these images inspire you to
+                visit this incredible city!</p>
+            <img src="path/to/your/image1.jpg" alt="Description of image 1">
+            <img src="path/to/your/image2.jpg" alt="Description of image 2">
+        </section> -->
+
+        <section class="section-one">
+            <h2 class="heading">Gallery</h2>
+            <div class="container">
+                
+                <div class="box">
+                    <img src="./assets/a1.png" alt="Service 1">
+                    <div class="content">
+                        <h3>Vibrant Spices of Dubai's Souk</h3>
+                        <p>A colorful display of spices at a traditional Dubai market, offering a rich blend of exotic flavors and aromas, showcasing the heart of Middle Eastern cuisine.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a2.png" alt="Service 2">
+                    <div class="content">
+                        <h3> Serene Waterfront at Dubai Marina</h3>
+                        <p>A tranquil moment by Dubai Marina, with modern skyscrapers towering above and luxury yachts gliding along the water, offering a glimpse of the city's opulence and charm.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a3.png" alt="Service 3">
+                    <div class="content">
+                        <h3>Dubai's Famous Date Market</h3>
+                        <p> Busy shop with a variety of quality dates on display showcasing one of the nation's most beloved delicacies with friendly vendors assisting the buyers in their purchase.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a4.png" alt="Service 4">
+                    <div class="content">
+                        <h3>Dubai Nights, Luxury and Lights</h3>
+                        <p>Breathtaking scenery of Dubai's dazzling night skyline, with sleek luxury cars moving along the streets, reflecting the city's vibrant nightlife and modern sophistication.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a5.png" alt="Service 5">
+                    <div class="content">
+                        <h3>Colourful Spices of Dubai's Souks
+                        </h3>
+                        <p>A collection of spices and herbs in bright colours set out in shiny containers, providing a rich sensory experience that showcases Dubai's diversity in culture and cuisine.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a6.png" alt="Service 6">
+                    <div class="content">
+                        <h3>Burj Khalifa Illuminated at Night
+                        </h3>
+                        <p>The iconic Burj Khalifa towers over the Dubai skyline.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a7.png" alt="Service 7">
+                    <div class="content">
+                        <h3>Reflections of Emaar Buildings
+                        </h3>
+                        <p>Nighttime scenery of Dubai Mall and Emaar buildings reflecting in calm waters with warm and elegant lighting.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a8.png" alt="Service 8">
+                    <div class="content">
+                        <h3>The Majestic Dubai Frame
+                        </h3>
+                        <p>Daytime view of the Dubai Frame in a clear blue sky with trees in the background.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/a9.png" alt="Service 9">
+                    <div class="content">
+                        <h3>Golden Adornments Exhibition
+                        </h3>
+                        <p>Beautiful showcases of intricate gold jewelry pieces including necklaces, bracelets, and earrings on mannequins in an upscale setting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Zulaikha's Dubai Diary. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

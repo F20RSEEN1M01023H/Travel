@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Adventures - Zulaikha's Dubai Diary</title>
+    <link rel="stylesheet" href="styles(1).css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+            /* background-color: #f0f2f5; */
+        }
+
+        .box {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #00a8e8;
+            border-radius: 8px;
+            background: white;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .box:hover .content {
+            opacity: 1;
+        }
+
+        .heading {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zulaikha's Dubai Diary</h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index(1).html">Home</a></li>
+                <li><a href="about(1).html">About Me</a></li>
+                <li><a href="adventures(1).html">Dubai Adventures</a></li>
+                <li><a href="gallery(1).html">Gallery</a></li>
+                <li><a href="contact(1).html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <section>
+            <h2>Dubai Adventures</h2>
+            <p>From the towering Burj Khalifa to the serene Dubai Creek, I've experienced the best that Dubai has to offer. Stay tuned for my stories and tips on how to make the most of your visit!</p>
+        </section> -->
+        <section class="section-one">
+            <h2 class="heading">Dubai Adventures</h2>
+            <div class="container">
+
+                <div class="box">
+                    <img src="./assets/adv1.png" alt="Service 1">
+                    <div class="content">
+                        <h3> Exploring the Wonders of Expo City Dubai</h3>
+                        <p>CTake a relaxed stroll along the futuristic streets of Expo City Dubai, the hub of
+                            innovation, culture, and adventure. With stunning architecture, greenery, and innovative
+                            pavilions, it is the destination to experience the spirit of world creativity and
+                            sustainability. A destination not to be missed for each traveler in Dubai!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv2.png" alt="Service 2">
+                    <div class="content">
+                        <h3>A taste of Dubai
+                        </h3>
+                        <p>Indulge in the rich flavors of Dubai with this delicious mezze plate of hummus, baba
+                            ghanoush, tabbouleh, and more—a Middle Eastern culinary delight.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv3.png" alt="Service 3">
+                    <div class="content">
+                        <h3>Ultimate Arabian Feast</h3>
+                        <p>Enjoy a mouthwatering mix of seafood and meats featuring juicy kebabs, lamb chops, and
+                            sizzling prawns. A taste of Dubai's rich heritage at its finest!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv4.png" alt="Service 4">
+                    <div class="content">
+                        <h3>Ice Skating Adventure at Dubai Mall</h3>
+                        <p>Glide across the world-renowned Dubai Ice Rink, the thrilling escape in the middle of the
+                            desert. Perfect for skaters of all levels of experience, this cold adventure is filled with
+                            thrills and excitement in world-class atmosphere!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv5.png" alt="Service 5">
+                    <div class="content">
+                        <h3>Dubai Nights</h3>
+                        <p>Experience the stunning nightlife of Dubai with luxury cars gliding along the city of
+                            skyscrapers and twinkling lights. Unadulterated speed and luxury at its finest!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv1.png" alt="Service 1">
+                    <div class="content">
+                        <h3> Exploring the Wonders of Expo City Dubai</h3>
+                        <p>CTake a relaxed stroll along the futuristic streets of Expo City Dubai, the hub of
+                            innovation, culture, and adventure. With stunning architecture, greenery, and innovative
+                            pavilions, it is the destination to experience the spirit of world creativity and
+                            sustainability. A destination not to be missed for each traveler in Dubai!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv2.png" alt="Service 2">
+                    <div class="content">
+                        <h3>A taste of Dubai
+                        </h3>
+                        <p>Indulge in the rich flavors of Dubai with this delicious mezze plate of hummus, baba
+                            ghanoush, tabbouleh, and more—a Middle Eastern culinary delight.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv3.png" alt="Service 3">
+                    <div class="content">
+                        <h3>Ultimate Arabian Feast</h3>
+                        <p>Enjoy a mouthwatering mix of seafood and meats featuring juicy kebabs, lamb chops, and
+                            sizzling prawns. A taste of Dubai's rich heritage at its finest!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv4.png" alt="Service 4">
+                    <div class="content">
+                        <h3>Ice Skating Adventure at Dubai Mall</h3>
+                        <p>Glide across the world-renowned Dubai Ice Rink, the thrilling escape in the middle of the
+                            desert. Perfect for skaters of all levels of experience, this cold adventure is filled with
+                            thrills and excitement in world-class atmosphere!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/adv5.png" alt="Service 5">
+                    <div class="content">
+                        <h3>Dubai Nights</h3>
+                        <p>Experience the stunning nightlife of Dubai with luxury cars gliding along the city of
+                            skyscrapers and twinkling lights. Unadulterated speed and luxury at its finest!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Zulaikha's Dubai Diary. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

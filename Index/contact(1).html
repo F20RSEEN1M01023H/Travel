@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Zulaikha's Dubai Diary</title>
+    <link rel="stylesheet" href="styles(1).css">
+    <style>
+        .contact-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            /* background: linear-gradient(135deg, #fdfcfb, #e2d1c3); */
+            
+        }
+
+        .contact-container {
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-container label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .contact-container textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        .contact-container button {
+            width: 100%;
+            padding: 12px;
+            background: #ffcc00;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-container button:hover {
+            background: #e6b800;
+        }
+        @media (max-width: 768px) {
+            .contact-container input,
+        .contact-container textarea {
+            /* width: 95%; */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zulaikha's Dubai Diary</h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index(1).html">Home</a></li>
+                <li><a href="about(1).html">About Me</a></li>
+                <li><a href="adventures(1).html">Dubai Adventures</a></li>
+                <li><a href="gallery(1).html">Gallery</a></li>
+                <li><a href="contact(1).html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <section>
+            <h2>Contact</h2>
+            <p>If you have any questions or just want to say hi, feel free to reach out to me!</p>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section> -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or just want to say hi, feel free to reach out to me!</p>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Zulaikha's Dubai Diary. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #6c6c6c !important;
+    height: 100vh;
+    padding-top: 110px;
+}
+
+/* General Header Styles */
+header {
+    background: linear-gradient(135deg, #211e3b, #211d39, #231731);
+    color: white;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensures it stays above other elements */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #6a5acd, #9370db);
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 38px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 84%;
+        left: 0;
+        background-color: #5a5656;
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px !important;
+    }
+
+    .menu-toggle {
+        font-size: 1.8rem;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav ul {
+        padding: 0.5rem 0;
+    }
+}
+
+
+main {
+    padding: 2rem;
+    /* background-color: white; */
+}
+
+footer {
+    background: linear-gradient(135deg, #211e3b, #211d39, #231731);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    /* position: relative; */
+    /* width: 100%; */
+    bottom: 0;
+}

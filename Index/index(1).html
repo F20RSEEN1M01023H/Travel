@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulaikha's Dubai Diary</title>
+    <link rel="stylesheet" href="styles(1).css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: url('/assets/index1.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* Black overlay with 50% opacity */
+            z-index: -1;
+        }
+
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 18px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffc107;
+            color: black;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        /* Featured Experiences */
+        .featured {
+            text-align: center;
+            padding: 50px 20px;
+            /* background-color: #f9f9f9; */
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .experience {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience:hover {
+            transform: translateY(-5px);
+        }
+
+        .experience img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .experience h3 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .experience p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav ul li {
+                padding: 15px;
+                border-bottom: 1px solid white;
+            }
+
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+  
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zulaikha's Dubai Diary</h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index(1).html">Home</a></li>
+                <li><a href="about(1).html">About Me</a></li>
+                <li><a href="adventures(1).html">Dubai Adventures</a></li>
+                <li><a href="gallery(1).html">Gallery</a></li>
+                <li><a href="contact(1).html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 style="text-align: center;">Welcome to My Dubai Diary</h2>
+            <p style="text-align: center;">Join me as I explore the vibrant city of Dubai and share my experiences with
+                you.</p>
+        </section>
+
+        <section class="hero">
+            <h2>Welcome to My Dubai Diary</h2>
+            <p>Join me as I explore the vibrant city of Dubai and share my experiences with you.</p>
+            <a href="adventures(1).html" class="btn">Explore Adventures</a>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Experiences</h2>
+            <div class="experience-grid">
+                <div class="experience">
+                    <img src="./assets/index1.1.jpg" alt="Burj Khalifa">
+                    <h3>Burj Khalifa Tour</h3>
+                    <p>Experience the world's tallest building with breathtaking views.</p>
+                </div>
+                <div class="experience">
+                    <img src="./assets/index2.jpg" alt="Desert Safari">
+                    <h3>Desert Safari</h3>
+                    <p>An adrenaline-pumping adventure in Dubai's golden dunes.</p>
+                </div>
+                <div class="experience">
+                    <img src="./assets/index3.jpg" alt="Dubai Marina">
+                    <h3>Dubai Marina</h3>
+                    <p>Enjoy the luxury lifestyle and nightlife of Dubai Marina.</p>
+                </div>
+                <div class="experience">
+                    <img src="./assets/index4.jpg" alt="Dubai Marina">
+                    <h3>Dubai Marina</h3>
+                    <p>Enjoy the luxury lifestyle and nightlife of Dubai Marina.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Zulaikha's Dubai Diary. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
