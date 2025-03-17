@@ -81,8 +81,8 @@ nav ul li a:hover::after {
         color: white;
         cursor: pointer;
         position: absolute;
-        right: 20px;
-        top: 38px;
+        right: 64px;
+        top: 30px;
     }
 
     nav ul {
@@ -116,8 +116,8 @@ nav ul li a:hover::after {
     .menu-toggle {
         font-size: 1.8rem;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 34px;
+        top: 25px;
     }
 
     nav ul {
